@@ -8,7 +8,7 @@ repository = "https://thunderstore.io"
 namespace = "chrispavs"
 name = "BetterRagdoll2"
 description = "A fork of Luluberlu's BetterRagdoll but with controller support. Press X or RB to ragdoll! A little force will be added in the direction you ragdoll. Like the original mod, the ragdoll force can be adjusted via config."
-websiteUrl = "" # TODO: Add a link to your mod repository here (optional)
+websiteUrl = "https://github.com/chrispavs/peak-better-ragdoll-2"
 containsNsfwContent = false
 
 [package.dependencies]
