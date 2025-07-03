@@ -18,6 +18,7 @@ public partial class Plugin : BaseUnityPlugin
 
     private void Awake()
     {
+        Log = Logger;
         Log.LogInfo($"Plugin {Name} is loaded!");
 
         this.forceConfig = base.Config.Bind<float>("Settings", "Ragdoll Force", 322f, "Force applied to the character when triggering ragdoll.");

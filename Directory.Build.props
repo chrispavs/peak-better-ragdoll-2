@@ -32,7 +32,7 @@
     <!-- Define a variable that points to this directory. -->
     <SolutionRoot>$(MSBuildThisFileDirectory)</SolutionRoot>
     <!-- Default values for game files. Change these to the correct directories on your computer. -->
-    <PeakPluginsDir Condition="$(PeakPluginsDir) == ''">W:\Gaming\Mods\r2modman\PEAK\profiles\Default\BepInEx\plugins</PeakPluginsDir>
+    <PeakPluginsDir Condition="$(PeakPluginsDir) == ''">W:\Gaming\Mods\r2modman\PEAK\profiles\Main\BepInEx\plugins</PeakPluginsDir>
 	<PeakGameRootDir Condition="$(PeakGameRootDir) == ''">W:\Gaming\SteamLibrary\steamapps\common\PEAK</PeakGameRootDir>
 	<ManagedDir>$(PeakGameRootDir)/PEAK_Data/Managed/</ManagedDir>
   </PropertyGroup>
