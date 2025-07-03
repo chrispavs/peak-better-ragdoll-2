@@ -38,7 +38,7 @@ public partial class Plugin : BaseUnityPlugin
                 this.forceConfig.Value += 10f;
                 Debug.Log(string.Format("Force increased to {0}", this.forceConfig.Value));
             }
-            if (Input.GetKeyDown(KeyCode.X) || (Gamepad.current != null && Gamepad.current.rightShoulder.wasPressedThisFrame))
+            if (Input.GetKeyDown(KeyCode.X) || (Gamepad.current != null && Gamepad.current.leftShoulder.wasPressedThisFrame))
             {
                 Character localCharacter = Character.localCharacter;
                 if (localCharacter.data.fallSeconds > 0f)
