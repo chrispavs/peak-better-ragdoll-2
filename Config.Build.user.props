@@ -13,4 +13,15 @@
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(PeakPluginsDir)" />
   </Target>
 
+	<ItemGroup>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(PeakGameRootDir)\PEAK_Data\Managed\Assembly-CSharp.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="Unity.InputSystem">
+			<HintPath>$(PeakGameRootDir)\PEAK_Data\Managed\Unity.InputSystem.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
+
 </Project>

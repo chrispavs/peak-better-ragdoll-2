@@ -7,20 +7,4 @@
     <Version>1.0.0</Version>
   </PropertyGroup>
 
-    <PropertyGroup>
-	    <GamePath>W:\Gaming\SteamLibrary\steamapps\common\Peak\Peak_Data\Managed</GamePath>
-		<BepInExPath>W:\Gaming\SteamLibrary\steamapps\common\Peak\BepInEx</BepInExPath>
-    </PropertyGroup>
-
-	<ItemGroup>
-		<Reference Include="Assembly-CSharp">
-			<HintPath>$(GamePath)\Assembly-CSharp.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
-		<Reference Include="Unity.InputSystem">
-			<HintPath>$(GamePath)\Unity.InputSystem.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
-	</ItemGroup>
-
 </Project>
