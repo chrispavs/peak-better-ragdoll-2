@@ -46,8 +46,8 @@ public partial class Plugin : BaseUnityPlugin
                     Debug.Log("Already in ragdoll – skipping.");
                     return;
                 }
-                Debug.Log("Ragdoll Key pressed → Triggering Fall + AddForce");
-                Character.localCharacter.GetType().GetMethod("Fall", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).Invoke(Character.localCharacter, new object[] { 1f });
+                Debug.Log("Ragdoll Key pressed");
+                localCharacter.photonView.RPC("RPCA_Fall", Photon.Pun.RpcTarget.All, .5f);
                 Vector3 avarageVelocity = localCharacter.data.avarageVelocity;
                 if (avarageVelocity.magnitude < 0.1f)
                 {
@@ -55,7 +55,7 @@ public partial class Plugin : BaseUnityPlugin
                     return;
                 }
                 Vector3 vector = avarageVelocity.normalized * this.forceConfig.Value;
-                Character.localCharacter.GetType().GetMethod("AddForce", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).Invoke(Character.localCharacter, new object[] { vector, 1f, 1f });
+                localCharacter.AddForce(vector);
                 Debug.Log(string.Format("Force applied: {0}", vector));
             }
         }
